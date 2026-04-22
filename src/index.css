@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -102,19 +102,19 @@
 
 @layer components {
   .font-orbitron {
-    font-family: 'Play', sans-serif;
+    font-family: "Play", sans-serif;
   }
 
   .font-geist {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
   }
 
   .font-space-mono {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
   }
 
   .font-display {
-    font-family: 'Play', sans-serif;
+    font-family: "Play", sans-serif;
   }
 
   .fade-in {
@@ -136,12 +136,57 @@
   .glow-border {
     position: relative;
     border: 1px solid transparent;
-    background: linear-gradient(hsl(var(--card)), hsl(var(--card))) padding-box,
+    background:
+      linear-gradient(hsl(var(--card)), hsl(var(--card))) padding-box,
       linear-gradient(45deg, hsl(var(--primary)), hsl(var(--accent))) border-box;
   }
 
   .pulse-button {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .glow-btn {
+    position: relative;
+    overflow: hidden;
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.2s ease;
+  }
+
+  .glow-btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -75%;
+    width: 50%;
+    height: 200%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.35),
+      transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.4s ease;
+    pointer-events: none;
+  }
+
+  .glow-btn:hover::before {
+    left: 125%;
+  }
+
+  .glow-btn:hover {
+    box-shadow:
+      0 0 18px 4px rgba(239, 68, 68, 0.6),
+      0 0 40px 8px rgba(239, 68, 68, 0.25);
+    transform: translateY(-2px);
+  }
+
+  .glow-btn-outline:hover {
+    box-shadow:
+      0 0 18px 4px rgba(239, 68, 68, 0.4),
+      0 0 40px 8px rgba(239, 68, 68, 0.15);
+    transform: translateY(-2px);
   }
 }
 
