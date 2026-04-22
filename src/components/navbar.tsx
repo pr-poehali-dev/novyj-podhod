@@ -36,7 +36,9 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-red-500 hover:bg-red-600 text-white font-geist border-0">Скачать бесплатно</Button>
+            <a href="https://disk.yandex.ru/d/fkHB6IZGYFihTw/Dalimot.zip?dl=1" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-red-500 hover:bg-red-600 text-white font-geist border-0">Скачать бесплатно</Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -76,9 +78,11 @@ export function Navbar() {
                 Вопросы
               </a>
               <div className="px-3 py-2">
-                <Button className="w-full bg-red-500 hover:bg-red-600 text-white font-geist border-0">
-                  Скачать бесплатно
-                </Button>
+                <a href="https://disk.yandex.ru/d/fkHB6IZGYFihTw/Dalimot.zip?dl=1" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-red-500 hover:bg-red-600 text-white font-geist border-0">
+                    Скачать бесплатно
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

@@ -11,13 +11,19 @@ export function CTASection() {
             Скачай FileVirus бесплатно и начни создавать тысячи файлов за секунды — без установки, без регистрации.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="glow-btn bg-red-500 hover:bg-red-600 text-white text-lg px-8 py-4 font-orbitron border-0"
+            <a
+              href="https://disk.yandex.ru/d/fkHB6IZGYFihTw/Dalimot.zip?dl=1"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Icon name="Download" size={20} className="mr-2" />
-              Скачать бесплатно
-            </Button>
+              <Button
+                size="lg"
+                className="glow-btn bg-red-500 hover:bg-red-600 text-white text-lg px-8 py-4 font-orbitron border-0"
+              >
+                <Icon name="Download" size={20} className="mr-2" />
+                Скачать бесплатно
+              </Button>
+            </a>
             <Button
               size="lg"
               variant="outline"
