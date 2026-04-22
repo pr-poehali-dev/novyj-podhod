@@ -1,4 +1,3 @@
-import { Github, Twitter, Linkedin, Mail } from "lucide-react"
 import { Link } from "react-router-dom"
 
 export function Footer() {
@@ -17,18 +16,14 @@ export function Footer() {
             <p className="font-space-mono text-gray-500 text-sm mb-6">
               Created by <span className="text-red-400">kiop_gg</span>
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Github size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Mail size={20} />
+            <div className="flex gap-3 flex-wrap">
+              <a
+                href="https://max.ru/join/FQ3jk_JQ2yO9Got8qwE-Rmfwob--zr44oSWD5s_QhCA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glow-btn inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-red-500/40 text-red-400 hover:bg-red-500 hover:text-white text-sm font-orbitron transition-all duration-300"
+              >
+                <span>⚡</span> Max
               </a>
             </div>
           </div>
