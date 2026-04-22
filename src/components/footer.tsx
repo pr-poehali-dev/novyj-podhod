@@ -1,4 +1,5 @@
 import { Github, Twitter, Linkedin, Mail } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export function Footer() {
   return (
@@ -8,10 +9,13 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <h2 className="font-orbitron text-2xl font-bold text-white mb-4">
-              Synapse<span className="text-red-500">AI</span>
+              File<span className="text-red-500">Virus</span>
             </h2>
-            <p className="font-space-mono text-gray-300 mb-6 max-w-md">
-              Продвигаем будущее нейросвязи с передовыми технологиями интерфейса мозг-компьютер.
+            <p className="font-space-mono text-gray-300 mb-2 max-w-md">
+              Генератор файлов для Windows. Быстро, безопасно, бесплатно.
+            </p>
+            <p className="font-space-mono text-gray-500 text-sm mb-6">
+              Created by <span className="text-red-400">kiop_gg</span>
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
@@ -99,26 +103,20 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-red-500/20">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-space-mono text-gray-400 text-sm">2025 SynapseAI. Все права защищены.</p>
+            <p className="font-space-mono text-gray-400 text-sm">© 2026 FileVirus by kiop_gg. Все права защищены.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a
-                href="#"
+              <Link
+                to="/privacy"
                 className="font-space-mono text-gray-400 hover:text-red-500 text-sm transition-colors duration-200"
               >
                 Конфиденциальность
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/terms"
                 className="font-space-mono text-gray-400 hover:text-red-500 text-sm transition-colors duration-200"
               >
-                Условия использования
-              </a>
-              <a
-                href="#"
-                className="font-space-mono text-gray-400 hover:text-red-500 text-sm transition-colors duration-200"
-              >
-                Cookie-политика
-              </a>
+                Правила использования
+              </Link>
             </div>
           </div>
         </div>
